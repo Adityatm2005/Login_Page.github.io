@@ -1,1 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue:ital,wght@1,700&display=swap');
+body, html{
+    height: 100%;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family:"Comic Neue", cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    background-image: url(./img/background_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+header{
+    background-color: rgba(0, 0, 0,.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header h1 {
+    color: aliceblue;
+    font-weight:bolder;
+    user-select: none;
+}
+
+.menu{
+    background-color: aliceblue;
+    height: 100%;
+    width: 180px;
+    
+}
+
+.navigation a{
+    position: relative;
+    background-color: transparent;
+    color:aliceblue; ;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:bolder;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content:'';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: aliceblue;
+    border-radius: 7px;
+    transform: scaleX(0);
+    transition: 0.4s;
+}
+.navigation a:hover::after{
+    
+    transform:scaleX(1);
+    
+}
+.loginbtn{
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+    font-weight:bolder;
+    font-size:large;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid aliceblue;
+    cursor:pointer;
+    transform:scale(1);
+    transition: 0.4s;
+}
+.loginbtn:hover{
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255,.2);
+    color: rgb(0,0,0);
+}
+main{
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.loginbox{
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 400px;
+    height: 310px;
+    border: 4px solid rgba(73, 71, 71,.5);
+    border-radius:10%;
+    background-color: rgba(0,0,0,.5);
+    color: aliceblue;
+}
+.loginbox h1{
+    margin: 15px 0;
+    font-size: 30px;
+    text-align: center;
+}
+.loginbox .input_box{
+    position: relative;
+    height: 100%;
+    width: 50px; 
+    margin: 20px 10px;
+}
+
+.input_box input{
+    width: 270px;
+    height: 30px;
+    top: 50%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border: transparent;
+    background: rgba(255,255,255,.5);
+    font-size: 16px;
+    margin: 5px 55px;
+    padding: 15px 20px 15px 10px;
+}
+.input_box input::placeholder {
+    color:rgb(1, 31, 31);
+}
+
+.icon1{
+    position: absolute;
+    width: 20px;
+    top:10px;
+    right:-268px;
+}
+.icon2{
+    position: absolute;
+    opacity: 0.7;
+    width: 20px;
+    top:10px;
+    right:-268px;
+}
+#btn{
+    margin: 10px 150px;
+    padding: auto;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    background: rgba(255,255,255,.6) ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius:45px;
+    transform: scale(1);
+    transition: 0.3s;
+}
+.btn:hover{
+    transform:scale(1.2);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255,.2);
+}
+.resister{
+    text-align: center;
+    font-size: small;
+    opacity: 0.8;
+}
